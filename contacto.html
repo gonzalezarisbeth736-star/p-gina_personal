@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Arisbeth González Martínez">
+    <meta name="description" content="Página de contacto del portafolio personal de Arisbeth.">
+    <meta name="keywords" content="contacto, portafolio, diseño web, tecnología">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+
+    <title>Contacto | Arisbeth</title>
+</head>
+
+<body>
+
+<header class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.png" alt="Logo personal"
+                class="d-inline-block align-text-middle logotipo">
+            ARISBETH<span class="punto">.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuContacto"
+            aria-controls="menuContacto"
+            aria-expanded="false"
+            aria-label="Mostrar menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuContacto">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html#quien">Sobre mí</a>
+                <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                <a class="nav-link" href="#formulario">Contacto</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+<section class="container-fluid contacto-portada">
+    <div class="container">
+        <p class="etiqueta"> CONTACTO</p>
+
+        <h1>
+            HABLEMOS<span class="punto">.</span>
+        </h1>
+
+        <p>
+            ¿Tienes una idea o quieres conocer más sobre mi trabajo?
+            Me encantará leerte.
+        </p>
+    </div>
+</section>
+
+<section id="formulario" class="container seccion-contacto">
+    <div class="row">
+
+        <article class="col-lg-5 mb-4">
+            <p class="etiqueta">PONTE EN CONTACTO</p>
+
+            <h2 class="titulo-seccion">
+                TODA IDEA<br>
+                COMIENZA<br>
+                AQUÍ<span class="punto">.</span>
+            </h2>
+
+            <p>
+                Este espacio está abierto a ideas, preguntas y propuestas
+                relacionadas con el diseño y la tecnología.
+            </p>
+
+            <div class="dato-contacto">
+                <h3>Correo electrónico</h3>
+                <p>gonzalezarisbeth736@gmail.com</p>
+            </div>
+
+            <div class="dato-contacto">
+                <h3>Ubicación</h3>
+                <p>León, Guanajuato, México.</p>
+            </div>
+        </article>
+
+        <article class="col-lg-7">
+            <div class="formulario-personal">
+
+                <h2>ESCRÍBEME.</h2>
+                <p>Completa los siguientes campos.</p>
+
+                <form action="#" method="post">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">
+                            Nombre completo
+                        </label>
+
+                        <input type="text" class="form-control"
+                            id="nombre" name="nombre"
+                            placeholder="Tu nombre"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <input type="email" class="form-control"
+                            id="correo" name="correo"
+                            placeholder="tu@correo.com"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">
+                            Motivo del mensaje
+                        </label>
+
+                        <select id="asunto" name="asunto"
+                            class="form-select" required>
+
+                            <option value="" selected disabled>
+                                Selecciona una opción
+                            </option>
+
+                            <option value="proyecto">Proyecto</option>
+                            <option value="diseno">Diseño digital</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">
+                            Mensaje
+                        </label>
+
+                        <textarea id="mensaje" name="mensaje"
+                            class="form-control" rows="5"
+                            placeholder="Escribe tu mensaje..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-personal w-100">
+                        ENVIAR MENSAJE &#8594;
+                    </button>
+
+                    <p class="nota mt-3">
+                        Formulario de demostración para el proyecto escolar.
+                    </p>
+
+                </form>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="container-fluid seccion-mapa">
+    <div class="container">
+
+        <p class="etiqueta">MI UBICACIÓN</p>
+
+        <h2 class="titulo-seccion">
+            LEÓN, GUANAJUATO<span class="punto">.</span>
+        </h2>
+
+        <iframe class="mapa-personal"
+            src="https://maps.google.com/maps?q=Universidad%20Tecnol%C3%B3gica%20de%20Le%C3%B3n&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            title="Mapa de la Universidad Tecnológica de León"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+</section>
+
+<section class="cierre text-center py-5">
+    <div class="container">
+
+        <p class="etiqueta">GRACIAS POR VISITAR</p>
+
+        <h2>
+            NOS VEMOS<br>
+            <span>PRONTO.</span>
+        </h2>
+
+        <a href="index.html" class="btn btn-claro">
+            VOLVER AL INICIO &#8594;
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="container-fluid footer-personal">
+    <p class="py-3 mb-0">
+        Copyright 2026 - Arisbeth González Martínez
+    </p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

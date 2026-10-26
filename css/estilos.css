@@ -1,0 +1,546 @@
+
+/* TIPOGRAFÍA */
+@font-face {
+    font-family: "Chilanka";
+    src: url("../font/Chilanka-Regular.ttf") format("truetype");
+}
+
+:root {
+    --fondo: #f3f0e8;
+    --verde: #718b78;
+    --verde-oscuro: #405747;
+    --lila: #c9afd7;
+    --negro: #20221f;
+    --gris: #686a64;
+    --blanco: #ffffff;
+    --borde: #d4d0c5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    padding-top: 65px;
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--negro);
+    font-family: "Chilanka", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+p {
+    color: var(--gris);
+}
+
+.punto {
+    color: var(--verde);
+}
+
+.etiqueta {
+    color: var(--verde-oscuro);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* MENÚ */
+
+.navbar {
+    background-color: var(--negro);
+}
+
+.navbar-brand {
+    color: var(--blanco);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: var(--lila);
+}
+
+.logotipo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link:hover {
+    color: var(--lila);
+}
+
+/* PORTADA */
+
+.portada {
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.titulo-principal {
+    margin: 20px 0;
+    font-size: clamp(45px, 7vw, 100px);
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    overflow-wrap: anywhere;
+}
+
+.titulo-principal span:first-of-type {
+    color: var(--verde);
+}
+
+.texto-portada {
+    max-width: 450px;
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.foto-portada {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border: 8px solid var(--verde);
+}
+
+.datos-portada {
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--borde);
+    border-bottom: 1px solid var(--borde);
+}
+
+.datos-portada p {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.datos-portada span {
+    font-size: 14px;
+}
+
+/* BOTONES */
+
+.btn-personal {
+    padding: 11px 18px;
+    border: 1px solid var(--negro);
+    border-radius: 0;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-personal:hover {
+    border-color: var(--verde-oscuro);
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+.btn-claro {
+    padding: 12px 22px;
+    border: 1px solid var(--blanco);
+    border-radius: 0;
+    background-color: var(--fondo);
+    color: var(--negro);
+}
+
+.btn-claro:hover {
+    background-color: var(--lila);
+    color: var(--negro);
+}
+
+/* SOBRE MÍ */
+
+.seccion-quien {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+.foto-sobre {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-left: 7px solid var(--verde);
+    border-right: 7px solid var(--lila);
+}
+
+.titulo-seccion {
+    margin: 15px 0 25px;
+    font-size: clamp(32px, 5vw, 65px);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.titulo-seccion span:not(.punto) {
+    color: var(--verde-oscuro);
+}
+
+.seccion-quien article p:not(.etiqueta) {
+    font-size: 16px;
+}
+
+/* FILOSOFÍA */
+
+.filosofia {
+    background-color: var(--verde-oscuro);
+}
+
+.filosofia .etiqueta {
+    color: var(--lila);
+}
+
+.filosofia h2 {
+    color: var(--blanco);
+}
+
+.frase {
+    max-width: 800px;
+    margin: 25px auto;
+    color: var(--blanco);
+    font-size: clamp(18px, 2.5vw, 25px);
+}
+
+.firma {
+    color: var(--lila);
+    font-style: italic;
+}
+
+/* PROYECTOS */
+
+.seccion-proyectos {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+.tarjeta {
+    overflow: hidden;
+    border: 1px solid var(--borde);
+    border-radius: 0;
+    background-color: var(--fondo);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta .card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.tarjeta .card-body {
+    padding: 22px;
+}
+
+.tarjeta .card-title {
+    font-size: 28px;
+}
+
+.tarjeta .card-text {
+    font-size: 14px;
+}
+
+.numero {
+    color: var(--verde-oscuro);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    background-color: var(--verde);
+}
+
+.habilidades .etiqueta {
+    color: var(--blanco);
+}
+
+.habilidades .titulo-seccion {
+    color: var(--negro);
+}
+
+.habilidad {
+    min-height: 180px;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.habilidad:last-child {
+    border-right: 0;
+}
+
+.icono {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--blanco);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.habilidad h3 {
+    font-size: 19px;
+}
+
+.habilidad p {
+    font-size: 14px;
+    color: var(--blanco);
+}
+
+/* VIDEO Y AUDIO */
+
+.audio-personal {
+    padding: 25px;
+    border: 1px solid var(--borde);
+    background-color: var(--blanco);
+}
+
+.audio-personal h3,
+#multimedia h3 {
+    font-size: 25px;
+}
+
+#multimedia video {
+    max-height: 400px;
+    background-color: var(--negro);
+}
+
+#multimedia audio {
+    margin-top: 15px;
+}
+
+.nota {
+    font-size: 12px;
+}
+
+/* UBICACIÓN */
+
+.ubicacion {
+    background-color: var(--lila);
+}
+
+.mapa {
+    height: 350px;
+}
+
+.imagen-carrusel {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(32, 34, 31, 0.65);
+    padding: 15px;
+}
+
+.carousel-caption p {
+    color: var(--blanco);
+}
+
+/* CIERRE */
+
+.cierre {
+    background-color: var(--negro);
+}
+
+.cierre .etiqueta {
+    color: var(--lila);
+}
+
+.cierre h2 {
+    margin: 20px 0;
+    color: var(--blanco);
+    font-size: clamp(40px, 7vw, 75px);
+    line-height: 0.95;
+}
+
+.cierre h2 span {
+    color: var(--verde);
+}
+
+/* PIE DE PÁGINA */
+
+.footer-personal {
+    background-color: var(--negro);
+    text-align: center;
+}
+
+.footer-personal p {
+    color: var(--blanco);
+    font-size: 13px;
+}
+
+/* PÁGINA DE CONTACTO */
+
+.contacto-portada {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--borde);
+}
+
+.contacto-portada h1 {
+    font-size: clamp(50px, 10vw, 100px);
+    font-weight: 900;
+}
+
+.seccion-contacto {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.dato-contacto {
+    margin-top: 25px;
+}
+
+.dato-contacto h3 {
+    font-size: 20px;
+}
+
+.formulario-personal {
+    padding: 30px;
+    border: 1px solid var(--borde);
+    background-color: var(--blanco);
+}
+
+.formulario-personal h2 {
+    font-size: 35px;
+}
+
+.formulario-personal .form-control,
+.formulario-personal .form-select {
+    min-height: 45px;
+    border-radius: 0;
+    border-color: var(--borde);
+    background-color: var(--fondo);
+}
+
+.formulario-personal .form-control:focus,
+.formulario-personal .form-select:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 0.2rem rgba(113,139,120,0.2);
+}
+
+.seccion-mapa {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--lila);
+}
+
+.mapa-personal {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .foto-portada {
+        height: 370px;
+    }
+
+    .habilidad {
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .portada {
+        padding-top: 35px;
+    }
+
+    .titulo-principal {
+        letter-spacing: -1px;
+    }
+
+    .foto-portada {
+        height: 320px;
+    }
+
+    .datos-portada {
+        margin-top: 25px;
+    }
+
+    .seccion-quien,
+    .seccion-proyectos {
+        padding-top: 45px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .habilidad {
+        padding: 15px 10px;
+        border-right: 0;
+    }
+
+    .habilidad:nth-child(odd) {
+        border-right: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .habilidad h3 {
+        font-size: 16px;
+    }
+
+    .habilidad p {
+        font-size: 12px;
+    }
+
+    .imagen-carrusel {
+        height: 280px;
+    }
+
+    .mapa,
+    .mapa-personal {
+        height: 300px;
+    }
+
+    .formulario-personal {
+        padding: 20px;
+    }
+}
+
+.video-proyecto {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    background-color: var(--negro);
+}
+
+.seccion-proyectos {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
